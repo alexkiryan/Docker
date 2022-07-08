@@ -12,4 +12,4 @@ RUN sudo apt upgrade -y
 RUN sudo apt-get upgrade -y
 
 # Добавление задачи в крон каждый час, еще можно добавить команду на выполнение скриптаЮ который уже на сервере, либо тут и создается
-Run sudo echo "* */1 * * *  root echo "1">>/var/log/test.log" >> /etc/crontab
+RUN sudo echo "* */1 * * *  root echo "1">>/var/log/test.log" >> /etc/crontab
